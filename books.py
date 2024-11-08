@@ -7,7 +7,15 @@ class Database:
         self.csv_file = csv_file
         
     def input_data(self):
+        """
+        Inputs csv file into database.
         
+        Args:
+        csv_file: csv file
+        
+        Return:
+        New database 'books.dp' where you input csv_file.
+        """
         books = pd.read_csv(self.csv_file)
         print(books)
         
